@@ -6,5 +6,4 @@ const app = Vue.createApp({
     <h1>İleti</h1>
     `
 });
-
 app.mount(".code")
