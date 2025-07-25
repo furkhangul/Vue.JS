@@ -1,0 +1,31 @@
+
+{
+    "_commnet":"Burada data dosyasını kurup db.json adında dosyayı kurduktan sonra
+    bunun gibi birkaç tane veriyi import ediyoruz. Elle veya sistem üzerinden.
+    Ardından terminal bölümünü açtıktan sonra terminale girdiğimiz klasöre kadar giriyoruz ve
+    json-server --watch ./data/db.json şeklinde yazdığımız zaman aslında 300 portunda bir yer 
+    açıp verileri orada göstermeye başlıyoruz. ",
+    "Projeler": [
+        {"id":1,
+        "isim":"Proje 1",
+        "bilgi":"Deneme Projesi 1!",
+        "bitti": true
+    },
+    {"id":2,
+        "isim":"Proje 2",
+        "bilgi":"Deneme Projesi 2!",
+        "bitti": false
+    },
+    {"id":3,
+        "isim":"Proje 3",
+        "bilgi":"Deneme Projesi 3!",
+        "bitti": true
+    },
+        {"id":4,
+        "isim":"Proje 4",
+        "bilgi":"Deneme Projesi 4!",
+        "bitti": false
+    }
+    ]
+}
+
