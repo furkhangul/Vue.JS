@@ -3,6 +3,7 @@
   <router-view/>
 </template>
 
+
 <script>
 
 import Menu from './views/Menu.vue'
