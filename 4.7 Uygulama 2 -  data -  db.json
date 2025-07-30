@@ -1,0 +1,28 @@
+{
+  "Projeler": [
+    {
+      "id": "1",
+      "isim": "Proje 1",
+      "bilgi": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus iure cumque rem vero? Sist nihil iste in consequatur nam soluta dolorem esse quaerat ipsam alias. Itaque fuga totam sed?",
+      "bitti": false
+    },
+    {
+      "id": "2",
+      "isim": "Proje 2",
+      "bilgi": "Adipisicing elit. Harum numquam in inventore quae. Eos minus, recusandae.Lorem, ipsum dolor sit amet consectetur quam voluptas molestiae blanditiis voluptate saepe animi ducimus, iusto qui vero sed labore a?",
+      "bitti": false
+    },
+    {
+      "id": "3",
+      "isim": "Proje 3",
+      "bilgi": "Quidem, cumque nobis corrupti id nemo perferendis eaque consequuntur quibusdam ea odit.Sit amet consectetur adipisicing elit. Sapiente, qui dolores.atque nostrum autem ratione officiis numquam minima Lorem ipsum dolor ?",
+      "bitti": false
+    },
+    {
+      "id": "4",
+      "isim": "Proje 4",
+      "bilgi": "Sit amet consectetur adipisicing elit. Sapiente, qui dolores. Quidem, cumque nobis corrupti id nemo perferendis eaque consequuntur quibusdam ea odit atque nostrum autem ratione officiis numquam minima Lorem ipsum dolor ?",
+      "bitti": true
+    }
+  ]
+}
