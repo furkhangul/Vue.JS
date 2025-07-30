@@ -1,46 +1,37 @@
-<template>
-  <div>
-<Filtre @filtrele="current = $event" :current="current" />
-    <div v-if="projects.length">
-      <div v-for="project in projects" :key="project.id">
-        <Veri :project="project" @delete="handleDelete" @bittiDegisti="handleBittiGuncelle"/>
-      </div>
-    </div>
-  </div>
+,<template>
+  <nav class="filtreleme">
+    <button @click="filtrele('all')" :class="{ active: current === 'all' }">Tümü</button>
+    <button @click="filtrele('complate')" :class="{ active: current === 'complate' }">Bitirilmiş</button>
+    <button @click="filtrele('ongoing')" :class="{ active: current === 'ongoing' }">Bitirilmemiş</button>
+  </nav>
 </template>
 
 <script>
-import Veri from '../components/VeriGonder.vue'
-import Filtre from './Filtre.vue'
 export default {
-  data() {
-    return {
-      projects: [],
-      current:""
-    }
-  },
-  components: {
-    Veri,
-    Filtre
-  },
+  props: ['current'],
   methods: {
-    handleDelete(id) {
-      this.projects = this.projects.filter((project) => project.id !== id)
-    },
-    handleBittiGuncelle(id) {
-      this.projects = this.projects.map(p => {
-        if (p.id === id) {
-          return { ...p, bitti: !p.bitti };
-        }
-        return p;
-      });
+    filtrele(by) {
+      this.$emit('filtrele', by);
     }
-  },
-  mounted() {
-    fetch('http://localhost:3000/Projeler')
-      .then(res => res.json())
-      .then(data => this.projects = data)
-      .catch(err => console.log(err.message))
   }
-}
+};
 </script>
+
+<style>
+.filtreleme button {
+  background: none;
+  border: none;
+  color: #bbb;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.filtreleme button.active {
+  color: #555;
+}
+</style>
