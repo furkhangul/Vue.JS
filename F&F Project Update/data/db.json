@@ -1,0 +1,42 @@
+{
+  "yazilar": [
+    {
+      "id": "1",
+      "title": "Proje 1",
+      "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus iure cumque rem vero? Sist nihil iste in consequatur nam soluta dolorem esse quaerat ipsam alias. Itaque fuga totam sed?",
+      "complate": true
+    }
+  ],
+  "mesajlar": [
+    {
+      "id": "9c2b",
+      "kim": "Furkan",
+      "icerik": "merhaba"
+    },
+    {
+      "id": "b271",
+      "kim": "Furkan",
+      "icerik": "aşk kadınım"
+    },
+    {
+      "id": "d31a",
+      "kim": "Furkan",
+      "icerik": "seni çoook seviyorum"
+    },
+    {
+      "id": "d456",
+      "kim": "Furkan",
+      "icerik": "karım benim"
+    },
+    {
+      "id": "a5e4",
+      "kim": "Furkan",
+      "icerik": "gülüm benim"
+    },
+    {
+      "id": "3c6d",
+      "kim": "Furkan",
+      "icerik": "asd"
+    }
+  ]
+}
